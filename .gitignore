@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+.venv/
+venv/
+env/
+
+# Tool and OS files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Experiment and model artifacts
+mlflow.db
+mlruns/
+model/
+*.pkl
+*.pickle
+
+# Generated notebooks and reports
+.ipynb_checkpoints/
+
+# Local datasets (tracked DVC files remain unaffected)
+data/*.csv
+data/*.parquet
+data/*.json

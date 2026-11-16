@@ -1,0 +1,32 @@
+[project]
+name = "mlflow-with-daghub"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Adrien Assouad", email = "adrien.assouad@icloud.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "cryptography>=43.0.0,<44.0.0",
+    "dagshub>=0.7.3",
+    "dvc-gdrive>=3.0.1",
+    "dvc[gdrive]>=3.67.1",
+    "fastapi>=0.162.5",
+    "mlflow<3.0.0",
+    "pyopenssl>=24.2.1",
+    "scikit-learn>=1.7.2",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+mlflow-with-daghub = "mlflow_with_daghub:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.3.0",
+]
